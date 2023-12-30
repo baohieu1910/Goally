@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4A3B1BD2B3FF2A200F0F7BD /* Goals+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1B92B3FF2A200F0F7BD /* Goals+CoreDataClass.swift */; };
+		A4A3B1BE2B3FF2A200F0F7BD /* Goals+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1BA2B3FF2A200F0F7BD /* Goals+CoreDataProperties.swift */; };
+		A4A3B1BF2B3FF2A200F0F7BD /* Tasks+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1BB2B3FF2A200F0F7BD /* Tasks+CoreDataClass.swift */; };
+		A4A3B1C02B3FF2A200F0F7BD /* Tasks+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1BC2B3FF2A200F0F7BD /* Tasks+CoreDataProperties.swift */; };
+		A4A3B1C32B3FF35600F0F7BD /* GoalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1C22B3FF35600F0F7BD /* GoalListViewModel.swift */; };
+		A4A3B1C52B3FF3A100F0F7BD /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1C42B3FF3A100F0F7BD /* TaskListViewModel.swift */; };
+		A4A3B1C82B3FF52F00F0F7BD /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1C72B3FF52F00F0F7BD /* NotificationManager.swift */; };
 		A4E8B4502B3EA05B00004A63 /* GoallyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E8B44F2B3EA05B00004A63 /* GoallyApp.swift */; };
 		A4E8B4522B3EA05B00004A63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E8B4512B3EA05B00004A63 /* ContentView.swift */; };
 		A4E8B4542B3EA05D00004A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E8B4532B3EA05D00004A63 /* Assets.xcassets */; };
 		A4E8B4572B3EA05D00004A63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E8B4562B3EA05D00004A63 /* Preview Assets.xcassets */; };
 		A4E8B4592B3EA05D00004A63 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E8B4582B3EA05D00004A63 /* Persistence.swift */; };
 		A4E8B45C2B3EA05D00004A63 /* Goally.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4E8B45A2B3EA05D00004A63 /* Goally.xcdatamodeld */; };
+		A4E8B46B2B3EA23D00004A63 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E8B46A2B3EA23D00004A63 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4A3B1B92B3FF2A200F0F7BD /* Goals+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goals+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4A3B1BA2B3FF2A200F0F7BD /* Goals+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goals+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A4A3B1BB2B3FF2A200F0F7BD /* Tasks+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tasks+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A4A3B1BC2B3FF2A200F0F7BD /* Tasks+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tasks+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A4A3B1C22B3FF35600F0F7BD /* GoalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListViewModel.swift; sourceTree = "<group>"; };
+		A4A3B1C42B3FF3A100F0F7BD /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		A4A3B1C72B3FF52F00F0F7BD /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		A4E8B44C2B3EA05B00004A63 /* Goally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E8B44F2B3EA05B00004A63 /* GoallyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoallyApp.swift; sourceTree = "<group>"; };
 		A4E8B4512B3EA05B00004A63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +38,7 @@
 		A4E8B4562B3EA05D00004A63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4E8B4582B3EA05D00004A63 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A4E8B45B2B3EA05D00004A63 /* Goally.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goally.xcdatamodel; sourceTree = "<group>"; };
+		A4E8B46A2B3EA23D00004A63 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4A3B1B82B3FF16400F0F7BD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A4A3B1B92B3FF2A200F0F7BD /* Goals+CoreDataClass.swift */,
+				A4A3B1BA2B3FF2A200F0F7BD /* Goals+CoreDataProperties.swift */,
+				A4A3B1BB2B3FF2A200F0F7BD /* Tasks+CoreDataClass.swift */,
+				A4A3B1BC2B3FF2A200F0F7BD /* Tasks+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A4A3B1C12B3FF33A00F0F7BD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A4A3B1C22B3FF35600F0F7BD /* GoalListViewModel.swift */,
+				A4A3B1C42B3FF3A100F0F7BD /* TaskListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A4A3B1C62B3FF51400F0F7BD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A4E8B46A2B3EA23D00004A63 /* CoreDataManager.swift */,
+				A4A3B1C72B3FF52F00F0F7BD /* NotificationManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		A4C901AC2B3FF135007CD790 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4A3B1B82B3FF16400F0F7BD /* CoreData */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A4E8B4432B3EA05B00004A63 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +108,14 @@
 		A4E8B44E2B3EA05B00004A63 /* Goally */ = {
 			isa = PBXGroup;
 			children = (
+				A4A3B1C62B3FF51400F0F7BD /* Helper */,
+				A4E8B45A2B3EA05D00004A63 /* Goally.xcdatamodeld */,
+				A4A3B1C12B3FF33A00F0F7BD /* ViewModel */,
+				A4C901AC2B3FF135007CD790 /* Models */,
 				A4E8B44F2B3EA05B00004A63 /* GoallyApp.swift */,
 				A4E8B4512B3EA05B00004A63 /* ContentView.swift */,
 				A4E8B4532B3EA05D00004A63 /* Assets.xcassets */,
 				A4E8B4582B3EA05D00004A63 /* Persistence.swift */,
-				A4E8B45A2B3EA05D00004A63 /* Goally.xcdatamodeld */,
 				A4E8B4552B3EA05D00004A63 /* Preview Content */,
 			);
 			path = Goally;
@@ -144,9 +200,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E8B4592B3EA05D00004A63 /* Persistence.swift in Sources */,
+				A4A3B1C52B3FF3A100F0F7BD /* TaskListViewModel.swift in Sources */,
 				A4E8B4522B3EA05B00004A63 /* ContentView.swift in Sources */,
 				A4E8B4502B3EA05B00004A63 /* GoallyApp.swift in Sources */,
+				A4A3B1C32B3FF35600F0F7BD /* GoalListViewModel.swift in Sources */,
 				A4E8B45C2B3EA05D00004A63 /* Goally.xcdatamodeld in Sources */,
+				A4A3B1C82B3FF52F00F0F7BD /* NotificationManager.swift in Sources */,
+				A4A3B1BD2B3FF2A200F0F7BD /* Goals+CoreDataClass.swift in Sources */,
+				A4A3B1BE2B3FF2A200F0F7BD /* Goals+CoreDataProperties.swift in Sources */,
+				A4A3B1BF2B3FF2A200F0F7BD /* Tasks+CoreDataClass.swift in Sources */,
+				A4E8B46B2B3EA23D00004A63 /* CoreDataManager.swift in Sources */,
+				A4A3B1C02B3FF2A200F0F7BD /* Tasks+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
