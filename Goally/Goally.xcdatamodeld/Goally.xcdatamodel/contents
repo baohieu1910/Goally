@@ -2,7 +2,6 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G83" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Goals" representedClassName="Goals" syncable="YES">
         <attribute name="desc" optional="YES" attributeType="String"/>
-        <attribute name="emoji" optional="YES" attributeType="String"/>
         <attribute name="goalID" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="isAchieved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="progress" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>

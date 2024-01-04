@@ -17,7 +17,6 @@ extension Goals {
     }
 
     @NSManaged public var desc: String?
-    @NSManaged public var emoji: String?
     @NSManaged public var goalID: UUID?
     @NSManaged public var isAchieved: Bool
     @NSManaged public var progress: Int16
@@ -25,16 +24,13 @@ extension Goals {
     @NSManaged public var title: String?
     @NSManaged public var tasks: NSSet?
 
-    public var unwrappedEmoji: String {
-        emoji ?? ""
-    }
-
     public var unwrappedTitle: String {
         title ?? ""
     }
 
     public var unwrappedProgress: Int16 {
         progress ?? 0
+        
     }
 
     public var unwrappedDesc: String {

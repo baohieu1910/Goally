@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A440CE6E2B427DA400F37F45 /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE6D2B427DA400F37F45 /* UIScreen.swift */; };
+		A440CE702B427DE500F37F45 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE6F2B427DE500F37F45 /* Binding.swift */; };
+		A440CE732B42805800F37F45 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE722B42805800F37F45 /* GoalView.swift */; };
+		A440CE762B4286E500F37F45 /* SwipeableView in Frameworks */ = {isa = PBXBuildFile; productRef = A440CE752B4286E500F37F45 /* SwipeableView */; };
+		A440CE782B42871500F37F45 /* GoalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE772B42871500F37F45 /* GoalDetailView.swift */; };
+		A440CE7E2B42A1B700F37F45 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE7D2B42A1B700F37F45 /* AddTaskView.swift */; };
+		A440CE802B42A1FD00F37F45 /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE7F2B42A1FD00F37F45 /* EditTaskView.swift */; };
+		A440CE822B42A4E200F37F45 /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE812B42A4E200F37F45 /* AddGoalView.swift */; };
+		A440CE842B42A4F200F37F45 /* EditGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE832B42A4F200F37F45 /* EditGoalView.swift */; };
+		A440CE892B42F39700F37F45 /* GoalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE882B42F39700F37F45 /* GoalCardView.swift */; };
+		A440CE8B2B43060300F37F45 /* CircularProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A440CE8A2B43060200F37F45 /* CircularProgressBarView.swift */; };
 		A4A3B1BD2B3FF2A200F0F7BD /* Goals+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1B92B3FF2A200F0F7BD /* Goals+CoreDataClass.swift */; };
 		A4A3B1BE2B3FF2A200F0F7BD /* Goals+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1BA2B3FF2A200F0F7BD /* Goals+CoreDataProperties.swift */; };
 		A4A3B1BF2B3FF2A200F0F7BD /* Tasks+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A3B1BB2B3FF2A200F0F7BD /* Tasks+CoreDataClass.swift */; };
@@ -24,6 +35,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A440CE6D2B427DA400F37F45 /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
+		A440CE6F2B427DE500F37F45 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		A440CE722B42805800F37F45 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		A440CE772B42871500F37F45 /* GoalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailView.swift; sourceTree = "<group>"; };
+		A440CE7D2B42A1B700F37F45 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		A440CE7F2B42A1FD00F37F45 /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
+		A440CE812B42A4E200F37F45 /* AddGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
+		A440CE832B42A4F200F37F45 /* EditGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalView.swift; sourceTree = "<group>"; };
+		A440CE882B42F39700F37F45 /* GoalCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCardView.swift; sourceTree = "<group>"; };
+		A440CE8A2B43060200F37F45 /* CircularProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBarView.swift; sourceTree = "<group>"; };
 		A4A3B1B92B3FF2A200F0F7BD /* Goals+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goals+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A4A3B1BA2B3FF2A200F0F7BD /* Goals+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goals+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A4A3B1BB2B3FF2A200F0F7BD /* Tasks+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tasks+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -46,12 +67,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A440CE762B4286E500F37F45 /* SwipeableView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A440CE6B2B427D6700F37F45 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A440CE6C2B427D7500F37F45 /* Extension */,
+				A4A3B1C62B3FF51400F0F7BD /* Helper */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A440CE6C2B427D7500F37F45 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A440CE6D2B427DA400F37F45 /* UIScreen.swift */,
+				A440CE6F2B427DE500F37F45 /* Binding.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A440CE712B427E2E00F37F45 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A4E8B4512B3EA05B00004A63 /* ContentView.swift */,
+				A440CE722B42805800F37F45 /* GoalView.swift */,
+				A440CE772B42871500F37F45 /* GoalDetailView.swift */,
+				A440CE7D2B42A1B700F37F45 /* AddTaskView.swift */,
+				A440CE7F2B42A1FD00F37F45 /* EditTaskView.swift */,
+				A440CE812B42A4E200F37F45 /* AddGoalView.swift */,
+				A440CE882B42F39700F37F45 /* GoalCardView.swift */,
+				A440CE832B42A4F200F37F45 /* EditGoalView.swift */,
+				A440CE8A2B43060200F37F45 /* CircularProgressBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A4A3B1B82B3FF16400F0F7BD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +164,12 @@
 		A4E8B44E2B3EA05B00004A63 /* Goally */ = {
 			isa = PBXGroup;
 			children = (
-				A4A3B1C62B3FF51400F0F7BD /* Helper */,
 				A4E8B45A2B3EA05D00004A63 /* Goally.xcdatamodeld */,
+				A4E8B44F2B3EA05B00004A63 /* GoallyApp.swift */,
+				A440CE712B427E2E00F37F45 /* Views */,
+				A440CE6B2B427D6700F37F45 /* Utilities */,
 				A4A3B1C12B3FF33A00F0F7BD /* ViewModel */,
 				A4C901AC2B3FF135007CD790 /* Models */,
-				A4E8B44F2B3EA05B00004A63 /* GoallyApp.swift */,
-				A4E8B4512B3EA05B00004A63 /* ContentView.swift */,
 				A4E8B4532B3EA05D00004A63 /* Assets.xcassets */,
 				A4E8B4582B3EA05D00004A63 /* Persistence.swift */,
 				A4E8B4552B3EA05D00004A63 /* Preview Content */,
@@ -145,6 +201,9 @@
 			dependencies = (
 			);
 			name = Goally;
+			packageProductDependencies = (
+				A440CE752B4286E500F37F45 /* SwipeableView */,
+			);
 			productName = Goally;
 			productReference = A4E8B44C2B3EA05B00004A63 /* Goally.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +232,9 @@
 				Base,
 			);
 			mainGroup = A4E8B4432B3EA05B00004A63;
+			packageReferences = (
+				A440CE742B4286E500F37F45 /* XCRemoteSwiftPackageReference "SwipebleView" */,
+			);
 			productRefGroup = A4E8B44D2B3EA05B00004A63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,11 +261,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A440CE782B42871500F37F45 /* GoalDetailView.swift in Sources */,
 				A4E8B4592B3EA05D00004A63 /* Persistence.swift in Sources */,
 				A4A3B1C52B3FF3A100F0F7BD /* TaskListViewModel.swift in Sources */,
+				A440CE7E2B42A1B700F37F45 /* AddTaskView.swift in Sources */,
 				A4E8B4522B3EA05B00004A63 /* ContentView.swift in Sources */,
+				A440CE702B427DE500F37F45 /* Binding.swift in Sources */,
 				A4E8B4502B3EA05B00004A63 /* GoallyApp.swift in Sources */,
+				A440CE6E2B427DA400F37F45 /* UIScreen.swift in Sources */,
+				A440CE8B2B43060300F37F45 /* CircularProgressBarView.swift in Sources */,
+				A440CE802B42A1FD00F37F45 /* EditTaskView.swift in Sources */,
+				A440CE892B42F39700F37F45 /* GoalCardView.swift in Sources */,
 				A4A3B1C32B3FF35600F0F7BD /* GoalListViewModel.swift in Sources */,
+				A440CE732B42805800F37F45 /* GoalView.swift in Sources */,
+				A440CE822B42A4E200F37F45 /* AddGoalView.swift in Sources */,
 				A4E8B45C2B3EA05D00004A63 /* Goally.xcdatamodeld in Sources */,
 				A4A3B1C82B3FF52F00F0F7BD /* NotificationManager.swift in Sources */,
 				A4A3B1BD2B3FF2A200F0F7BD /* Goals+CoreDataClass.swift in Sources */,
@@ -211,6 +282,7 @@
 				A4A3B1BF2B3FF2A200F0F7BD /* Tasks+CoreDataClass.swift in Sources */,
 				A4E8B46B2B3EA23D00004A63 /* CoreDataManager.swift in Sources */,
 				A4A3B1C02B3FF2A200F0F7BD /* Tasks+CoreDataProperties.swift in Sources */,
+				A440CE842B42A4F200F37F45 /* EditGoalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +481,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A440CE742B4286E500F37F45 /* XCRemoteSwiftPackageReference "SwipebleView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mroffmix/SwipebleView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A440CE752B4286E500F37F45 /* SwipeableView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A440CE742B4286E500F37F45 /* XCRemoteSwiftPackageReference "SwipebleView" */;
+			productName = SwipeableView;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A4E8B45A2B3EA05D00004A63 /* Goally.xcdatamodeld */ = {

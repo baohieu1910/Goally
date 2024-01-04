@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swipebleview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mroffmix/SwipebleView",
+      "state" : {
+        "revision" : "1d2b22b0c97dbd5ac9e4cb16020ff5d0f4191760",
+        "version" : "0.2.2"
+      }
+    }
+  ],
+  "version" : 2
+}

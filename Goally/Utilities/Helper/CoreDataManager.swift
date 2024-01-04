@@ -18,8 +18,7 @@ class CoreDataManager {
     }
     
     private init() {
-        persistentContainer = NSPersistentContainer(name: "GoallyDataModel")
-        
+        persistentContainer = NSPersistentContainer(name: "Goally")
         persistentContainer.loadPersistentStores { description, error in
             if let error = error {
                 fatalError("Unable to initialize Core Data \(error)")
@@ -36,7 +35,7 @@ class CoreDataManager {
         }
     }
     
-    func getAllGoals() -> [Goals]{
+    func getAllGoals() -> [Goals] {
         let request = NSFetchRequest<Goals>(entityName: "Goals")
         
         do {
@@ -46,23 +45,14 @@ class CoreDataManager {
         }
     }
     
-    func addGoal(emoji: String, title: String, desc: String) {
-        let newGoal = Goals(context: viewContext)
-        
-        newGoal.goalID = UUID()
-        newGoal.emoji = emoji
-        newGoal.title = title
-        newGoal.desc = desc
-        newGoal.progress = 0
-        newGoal.isAchieved = false
-        newGoal.timestamp = Date()
-        
-        saveContext()
-    }
-    
     func deleteGoals(goal: Goals) {
         viewContext.delete(goal)
-        saveContext()
+
+        do {
+            try viewContext.save()
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
     func getAllTasks() -> [Tasks] {

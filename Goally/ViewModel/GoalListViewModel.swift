@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-class GoalListViewModel {
+class GoalListViewModel: ObservableObject {
     
     @Published var goals: [Goals] = []
     private var taskListViewModel = TaskListViewModel()
@@ -17,11 +17,10 @@ class GoalListViewModel {
         goals = CoreDataManager.shared.getAllGoals()
     }
     
-    func addGoals(emoji: String, title: String, desc: String) {
+    func addGoal(title: String, desc: String) {
         let newGoal = Goals(context: CoreDataManager.shared.viewContext)
         
         newGoal.goalID = UUID()
-        newGoal.emoji = emoji
         newGoal.title = title
         newGoal.desc = desc
         newGoal.progress = 0
@@ -32,14 +31,14 @@ class GoalListViewModel {
         getAllGoals()
     }
     
-    func updateGoals() {
+    func updateGoal() {
         CoreDataManager.shared.saveContext()
         getAllGoals()
     }
     
-    func deleteGoals(goal: Goals) {
+    func deleteGoal(goal: Goals) {
         for task in goal.tasksArray {
-//            Notification
+            NotificationManager.instance.removeNotification(taskID: task.unwrappedTaskId)
         }
         CoreDataManager.shared.deleteGoals(goal: goal)
         getAllGoals()
@@ -47,8 +46,13 @@ class GoalListViewModel {
     
     func calculateProgress(goal: Goals) {
         if goal.tasksArray.count != 0 {
-            let todoTask = goal.tasksArray.count
-//            let totalAchieved = 
+            
+            let totalTask = goal.tasksArray.count
+            let totalAchieved = taskListViewModel.getTotalAchievedTask(goal: goal)
+            
+            goal.progress = Int16((totalAchieved*100)/totalTask)
+            CoreDataManager.shared.saveContext()
+            getAllGoals()
         }
     }
 }

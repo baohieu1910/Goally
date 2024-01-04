@@ -24,7 +24,7 @@ extension Tasks {
     @NSManaged public var goal: Goals?
 
     public var unwrappedTaskId: UUID {
-        taskId ?? UUID()
+        taskID ?? UUID()
     }
     
     public var unwrappedTitle: String {
