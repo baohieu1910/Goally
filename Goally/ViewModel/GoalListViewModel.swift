@@ -50,8 +50,8 @@ class GoalListViewModel: ObservableObject {
             let totalAchieved = taskListViewModel.getTotalAchievedTask(goal: goal)
             
             goal.progress = Int16((totalAchieved*100) / totalTask)
-            CoreDataManager.shared.saveContext()
-            getAllGoals()
         }
+        CoreDataManager.shared.saveContext()
+        getAllGoals()
     }
 }

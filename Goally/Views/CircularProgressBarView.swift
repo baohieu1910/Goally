@@ -25,6 +25,11 @@ struct CircularProgressBarView: View {
                         style: StrokeStyle( lineWidth: 13, lineCap: .round))
                 .rotationEffect(.degrees(-90))
                 .animation(.easeOut, value: progress)
+            
+            Text("\(progress)%")
+                .foregroundColor(.white)
+                .font(.system(size: 20, weight: .bold))
+    
         }
     }
 }

@@ -10,12 +10,8 @@ import SwiftUI
 struct GoalDetailView: View {
     @State var showAddGoal = false
     @State var showAddTask = false
-    @State var showEditTask = false
-    @State var showDeleteAlert = false
     
     @StateObject var goal: Goals
-    @State var selectedTask: Tasks
-    @State var deleteSelectedTask: Tasks
     
     @StateObject private var taskListViewModel = TaskListViewModel()
     @StateObject private var goalListViewModel = GoalListViewModel()
@@ -51,11 +47,7 @@ struct GoalDetailView: View {
                                 CircularProgressBarView(progress: goal.progress)
                                     .frame(width: 80, height: 80)
                                     .padding(.bottom, 20)
-                                
-                                Text("\(goal.progress)%")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20, weight: .bold))
-                                    .offset(y: -10)
+
                             }
                             .frame(width: UIScreen.screenWidth*40/100, alignment: .center)
 
@@ -149,18 +141,6 @@ struct GoalDetailView: View {
                                             Spacer()
                                         }
                                     }
-                                    .swipeActions(allowsFullSwipe: false) {
-                                        Button("Delete", role: .destructive) {
-                                            self.deleteSelectedTask = task
-                                            self.showDeleteAlert.toggle()
-                                        }
-
-                                        Button("Edit") {
-                                            self.selectedTask = task
-                                            self.showEditTask.toggle()
-                                        }
-                                        .tint(Color("DarkBlue"))
-                                    }
                                 }
                             }
                             .listStyle(.plain)
@@ -175,35 +155,13 @@ struct GoalDetailView: View {
                 AddTaskView(showAddTask: self.$showAddTask, goals: goal)
                     .environmentObject(taskListViewModel)
             }
-            .sheet(isPresented: $showEditTask) {
-                EditTaskView(showEditTask: self.$showEditTask, task: self.$selectedTask)
-                    .environmentObject(taskListViewModel)
-            }
-            .alert(isPresented: $showDeleteAlert) {
-                Alert(
-                    title: Text("Delete the task?"),
-                    message: Text("Once you delete, your task will be deleted"),
-                    primaryButton: .cancel (
-                        Text("Cancel"),
-                        action: {
-                            self.showDeleteAlert.toggle()
-                        }
-                    ),
-                    secondaryButton: .destructive (
-                        Text("Delete"),
-                        action: {
-                            taskListViewModel.deleteTask(task: deleteSelectedTask)
-                        }
-                    )
-                )
-            }
         }
     }
 }
 
 struct GoalDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        GoalDetailView(goal: Goals(context: CoreDataManager.shared.viewContext), selectedTask: Tasks(), deleteSelectedTask: Tasks())
+        GoalDetailView(goal: Goals(context: CoreDataManager.shared.viewContext))
             .environment(\.managedObjectContext, CoreDataManager.shared.viewContext)
     }
 }

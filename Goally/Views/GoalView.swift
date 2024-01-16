@@ -48,7 +48,7 @@ struct GoalView: View {
                     
                     } else {
                         ForEach(goalListViewModel.goals, id: \.self) { goal in
-                            NavigationLink(destination: GoalDetailView(goal: goal, selectedTask: Tasks(), deleteSelectedTask: Tasks())) {
+                            NavigationLink(destination: GoalDetailView(goal: goal)) {
                                 GoalCardView(goalTitle: goal.unwrappedTitle, goalProgress: Double(goal.unwrappedProgress))
                             }
                         }
@@ -74,29 +74,6 @@ struct GoalView: View {
         }
         .sheet(isPresented: $showAddGoal) {
             AddGoalView(showModal: self.$showAddGoal).environmentObject(goalListViewModel)
-        }
-        .sheet(isPresented: $showEditGoal) {
-            EditGoalView(showEditGoalModal: self.$showEditGoal, goals: $selectedGoal).environmentObject(goalListViewModel)
-        }
-        .alert(isPresented: $showDeleteAlert) {
-            Alert(
-                title: Text("Delete the goal?"),
-                message: Text("Once you delete, your goal will be deleted"),
-                primaryButton: .cancel (
-                    Text("Cancel"),
-                    action: {
-                        self.showDeleteAlert.toggle()
-                    }
-                ),
-                secondaryButton: .destructive (
-                    Text("Delete"),
-                    action: {
-                        withAnimation {
-                            goalListViewModel.deleteGoal(goal: selectedGoal)
-                        }
-                    }
-                )
-            )
         }
     }
     
