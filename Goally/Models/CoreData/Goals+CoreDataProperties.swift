@@ -25,20 +25,19 @@ extension Goals {
     @NSManaged public var tasks: NSSet?
 
     public var unwrappedTitle: String {
-        title ?? ""
+        return title ?? ""
     }
 
     public var unwrappedProgress: Int16 {
-        progress ?? 0
-        
+        return progress
     }
 
     public var unwrappedDesc: String {
-        desc ?? ""
+        return desc ?? ""
     }
 
     public var unwrappedIsAchieved: Bool {
-        isAchieved ?? false
+        return isAchieved
     }
 
     public var tasksArray: [Tasks] {

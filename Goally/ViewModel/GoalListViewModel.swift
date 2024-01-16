@@ -46,11 +46,10 @@ class GoalListViewModel: ObservableObject {
     
     func calculateProgress(goal: Goals) {
         if goal.tasksArray.count != 0 {
-            
             let totalTask = goal.tasksArray.count
             let totalAchieved = taskListViewModel.getTotalAchievedTask(goal: goal)
             
-            goal.progress = Int16((totalAchieved*100)/totalTask)
+            goal.progress = Int16((totalAchieved*100) / totalTask)
             CoreDataManager.shared.saveContext()
             getAllGoals()
         }

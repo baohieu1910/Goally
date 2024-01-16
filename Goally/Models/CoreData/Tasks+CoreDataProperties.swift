@@ -24,19 +24,19 @@ extension Tasks {
     @NSManaged public var goal: Goals?
 
     public var unwrappedTaskId: UUID {
-        taskID ?? UUID()
+        return taskID ?? UUID()
     }
     
     public var unwrappedTitle: String {
-        title ?? ""
+        return title ?? ""
     }
 
     public var unwrappedReminderTime: Date {
-        reminderTime ?? Date()
+        return reminderTime ?? Date()
     }
 
     public var unwrappedIsAchieved: Bool {
-        isAchieved ?? false
+        return isAchieved
     }
 }
 

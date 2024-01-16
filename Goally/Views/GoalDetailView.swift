@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct GoalDetailView: View {
-    
-    @Environment(\.presentationMode) var presentation
-    
     @State var showAddGoal = false
     @State var showAddTask = false
     @State var showEditTask = false
